@@ -1,0 +1,16 @@
+program money;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  Form_Principal in 'Form_Principal.pas' {Frm_Principal},
+  DataModule in 'DataModule.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrm_Principal, Frm_Principal);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.
